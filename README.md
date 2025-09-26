@@ -52,7 +52,8 @@ README.md                 # Project documentation
 - For Windows, use PowerShell or Command Prompt for commands.
 
 ## License
-MIT
+NoLicence
+
 =======
 # silentpixels
 A Flask-based web application for hiding and extracting secret messages in images and videos using steganography and RC4 encryption.
