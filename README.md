@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Silent Pixels Steganography Web App
 
 A Flask-based web application for hiding and extracting secret messages in images and videos using steganography and RC4 encryption.
@@ -52,3 +53,7 @@ README.md                 # Project documentation
 
 ## License
 MIT
+=======
+# silentpixels
+A Flask-based web application for hiding and extracting secret messages in images and videos using steganography and RC4 encryption.
+>>>>>>> 2f98754952cf540466982d72e9a54146e1035850
