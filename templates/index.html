@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Calligraffitti&family=Martel+Sans:wght@600&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Calligraffitti&family=Martel+Sans:wght@600&family=Rouge+Script&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Calligraffitti&family=Martel+Sans:wght@600&family=Poetsen+One&family=Rouge+Script&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Calligraffitti&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Martel+Sans:wght@600&family=Poetsen+One&family=Rouge+Script&display=swap");
+
+      body{
+        background-color: #e5caee;
+     }
+
+      .banner {
+        font-weight: 900;
+        font-style: normal;
+        font-size: 220%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+      }
+      a{
+        color: rgb(4, 44, 5);
+        text-decoration: none;
+      }
+      .slogun {
+        display: flex;
+        margin-top: 7vh;
+        display: flex;
+        margin-left: -10vw;
+        font-family: "Calligraffitti", cursive;
+        font-weight: 900;
+        font-style: normal;
+        font-size: large;
+      }
+
+      .heading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Poetsen One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+      }
+      .intro {
+        font-weight: 400;
+        font-style: normal;
+        font-size: 180%;
+        text-align: justify;
+
+      }
+      .logo {
+        width: 12vh;
+        height: 12vh;
+        border: 2px solid black;
+        border-radius: 60px;
+        fill: rgb(18, 92, 92);
+        background-color: white;
+      }
+      .nav {
+        margin: 0px;
+        padding: 0px;
+        height: 13vh;
+        width: 98.5vw;
+        position: sticky;
+        top: 2px;
+        background-color: rgb(71, 194, 194);
+        display: flex;
+        justify-content: space-between;
+        border-radius: 5px;
+      }
+      ul {
+        list-style: none;
+        display: flex;
+        gap: 30px;
+      }
+      ul li {
+        display: flex;
+        border: 0px solid black;
+        box-shadow: 6px 6px rgb(198, 201, 187);
+        width: 7vw;
+        background-color: rgb(255, 255, 255);
+        border-radius: 16px;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 3px solid black;
+      }
+      .su {
+        background-color: rgb(151, 150, 237);
+      }
+
+      .sidebar {
+        height: 80%;
+        width: 0;
+        z-index: 3;
+        position: fixed;
+        top: 90px;
+        right: 10px;
+        background-color: #a1d5db;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+
+      .sidebar a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #002f10;
+        display: block;
+        transition: 0.3s;
+      }
+
+      .sidebar a:hover {
+        color: #c21818;
+      }
+
+      .sidebar .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 48px;
+        margin-left: 50px;
+      }
+
+      .openbtn {
+        cursor: pointer;
+        background-color: rgb(71, 194, 194);
+        border: 0px;
+      }
+      #main {
+        transition: margin-left 0.5s;
+      }
+      .boody {
+        margin: 50px;
+
+        display: flex;
+      }
+      .frame {
+        border: 2px solid rgb(242, 216, 216);
+        border-radius: 15px;
+        width: 22vw;
+        height: 60vh;
+        background-color:rgb(71, 194, 194);
+        box-shadow: 6px 6px rgb(144, 150, 124);
+        align-items: center;
+      }
+      .btn {
+        border: 2px solid rgb(72, 191, 45);
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        margin: 60px 20px 20px 20px;
+        background-color: rgb(154, 222, 142);
+        font-family: "Poetsen One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        border-radius: 20px;
+        height: 50px;
+        align-items: center;
+        font-size: x-large;
+        box-shadow: 6px 6px rgb(165, 172, 140);
+      }
+      .topt {
+        margin: 20px 20px;
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        font-family: "Poetsen One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: xx-large;
+        text-align: center;
+      }
+      .imm {
+        margin-left: 50px;
+      }
+      .vss {
+        margin-left: 50px;
+      }
+      .txt {
+        width: 40vw;
+        height: 60vh;
+        background-color: #e5caee;
+      }
+      .iv {
+        display: flex;
+      }
+    /* Style the footer */
+footer {
+    background-color: #e5caee;;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style the button */
+#home-button {
+    background-color: #ddd;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#home-button:hover {
+    background-color: #ccc;
+}
+
+      @media only screen and (max-width: 500px) {
+        .banner {
+          font-size: 70%;
+          display: flex;
+          margin-left: -1vw ;
+        }
+        .slogun {
+          display: flex;
+          font-size: small;
+          margin-top: 6vh;
+          margin-left: -20vw ;
+
+        }
+        .logo {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          align-content: center;
+          width: 6vh;
+          height: 6vh;
+          margin-top: 1vh;
+        }
+        .nav {
+          height: 9vh;
+          margin-left: -1.8vw;
+        }
+        ul {
+          display: flex;
+          padding: 0;
+          margin: 0;
+          width: 30vw;
+          margin-top: -1px;
+          margin-right: 10vw;
+          height: 5vh;
+          gap: 10px;
+        }
+
+        .openbtn {
+          margin-top: 1.4vh;
+          margin-left: 25vw;
+        }
+        .intro {
+          font-family: "Josefin Sans", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: 200;
+          font-style: normal;
+        }
+        .txt {
+
+          display: block;
+          width: 100%;
+          padding: 0;
+          margin: 0;
+          height: auto;
+        }
+        .frame {
+          margin: 4px;
+          display: block;
+          height: auto;
+          width: 40vw;
+        }
+
+        .boody {
+          display: block;
+          margin: 0;
+        }
+        .iv {
+          display: flex;
+          margin: 3vw;
+          gap: 2vw;
+        }
+        .sesh {
+          font-family: "Josefin Sans", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: 200;
+          font-style: normal;
+        }
+      }
+    </style>
+
+    <title>Silent Pixels</title>
+  </head>
+  <body>
+    <div class="nav">
+      <div>
+        <img class="logo"
+        src="/static/LOGOR.png"
+         alt="not found" />
+      </div>
+      <div class="banner">
+      <h1>Silent Pixels</h1></div>
+
+      <h2 class="slogun ">Where Pixels Whisper Secrets</h2>
+      <ul>
+
+        <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >×</a
+          >
+    <a href="/index.html">Home</a>
+            <a href="tutorial.html">Tutorial</a>
+            <a href="/about.html">About</a>
+            <a href="/contact.html">Contact</a>
+            <a href="/buymeacoffee.html">Buy me a coffee</a>
+        </div>
+
+        <div id="main">
+          <button class="openbtn" onclick="openNav()">
+            <img src="/static/men1.png" alt="not found " width="50px" height="50px" />
+          </button>
+        </div>
+      </ul>
+    </div>
+
+    <div class="heading">
+      <h1>Unveiling the Unseen: Discover Steganography</h1>
+    </div>
+
+    <div class="boody">
+      <div class="txt">
+        <h2 class="intro">
+          Welcome to Silent Pixel, <br />
+          a unique platform where the art of steganography comes to life. We
+          offer a secure way to encode your secret messages within images and
+          videos, making them virtually undetectable. Dive into the fascinating
+          world of hidden data with us!
+          <br />Now that you’ve discovered the art of hidden communication, why
+          not give it a try? Unleash the power of Silent Pixel and let your
+          secrets be silently told.
+        </h2>
+      </div>
+      <div class="iv">
+        <div class="frame imm">
+          <div class="topt">IMAGE STEGANO</div>
+          <div class="btn">
+            <a href="encodeimg"> Encode</a>
+          </div>
+          <div class="btn"><a href="decodeimg"> Decode</a></div>
+        </div>
+        <div class="frame vss">
+          <div class="topt">VIDEO STEGANO</div>
+          <div class="btn">
+            <a href="encodevid"> Encode</a>
+          </div>
+          <div class="btn"><a href="decodevid"> Decode</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sesh">
+      <h2>
+        Please use Silent Pixel responsibly. While steganography is a powerful
+        tool, it should be used ethically and legally
+      </h2>
+
+      <h2>
+        Have questions or feedback? We’d love to hear from you. Feel free to
+        reach out to us at
+        <a href="mailto:silentpixels@myyahoo.com">silentpixels@myyahoo.com </a>
+      </h2>
+    </div>
+
+    <footer>
+      <button id="home-button">GO TO TOP</button>
+
+      <h3 style="color: rgb(188, 4, 4);background-color: rgba(255, 255, 255, 0.065);">Copyright &copy;Silent Pixels
+      </h3>
+  </footer>
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "200px";
+        document.getElementById("main").style.marginLeft = "0px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+      }
+
+      document.getElementById('home-button').addEventListener('click', function() {
+    // Scroll to the top of the page
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+    </script>
+  </body>
+</html>
